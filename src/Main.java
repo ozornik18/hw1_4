@@ -19,45 +19,14 @@ public class Main {
             }
         // Задание 3
         System.out.println("Задание 3");
-        switch (year) {
-            case 1904:
-            case 1908:
-            case 1912:
-            case 1916:
-            case 1920:
-            case 1924:
-            case 1928:
-            case 1932:
-            case 1936:
-            case 1940:
-            case 1944:
-            case 1948:
-            case 1952:
-            case 1956:
-            case 1960:
-            case 1964:
-            case 1968:
-            case 1972:
-            case 1976:
-            case 1980:
-            case 1984:
-            case 1988:
-            case 1992:
-            case 1996:
-            case 2000:
-            case 2004:
-            case 2008:
-            case 2012:
-            case 2016:
-            case 2020:
-            case 2024:
-            case 2028:
-            case 2032:
+        int currentYear = 2014;
+        if (currentYear % 4 == 0 && currentYear % 100 != 0 || currentYear % 400 == 0) {
             System.out.println("Год является високосным");
-            break;
-            default:
-              System.out.println("год не является високосным");
-            }
+        } else {
+            System.out.println("год не является високосным");
+        }
+
+
         // Задание 4
         System.out.println("Задание 4");
         int deliveryDistance = 59; //км
